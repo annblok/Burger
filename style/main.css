@@ -35,13 +35,14 @@ h1 span {
     display: block;
     margin-bottom: 10px;
 }
-p {
+.text p {
     font-family: 'Lato', sans-serif;
     font-size: 19px;
     line-height: 1.4;
     margin-bottom: 42px;
 }
-a {
+.main a,
+.promo a {
     color: #1E2F40;
     background-color: #FBB731;
     border-radius: 5px;
@@ -63,8 +64,112 @@ a {
     height: 100%;
     background: linear-gradient(2.42deg, #F37335 -19.6%, #FBB731 100.79%, #FDC830 100.79%);
 }
-img {
+.main img {
     width: 829px;
     position: absolute;
     right: -168px;
+}
+.promo {
+    padding-top: 186px;
+    padding-bottom: 186px;
+}
+.promo-left,
+.promo-right {
+    flex: 0 0 49%;
+    color: #fff;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.promo-left {
+    background-image: url(../image/promo-left.png);
+    padding: 116px 50px;
+}
+.promo-right {
+    background-image: url(../image/promo-right.png);
+    padding: 102px 50px;
+}
+.sale {
+    font-size: 14px;
+    font-weight: 900;
+    background: #F37335;
+    padding: 5px 19px;
+    border-radius: 14px;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+}
+.cost {
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+.description {
+    font-family: 'Lato', sans-serif;
+    color: #FAF9F9;
+    font-size: 15px;
+    line-height: 24px;
+}
+.promo-left .description {
+    max-width: 392px;
+}
+.promo-right .description {
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+.free {
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.footer {
+    background: #1E2F40;
+    color: #fff;
+    padding-top: 117px;
+    padding-bottom: 106px;
+}
+
+.logo {
+    width: 63px;
+    height: 56px;
+}
+.item {
+    flex: 0 0 auto;
+}
+.item h2 {
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+.item ul,
+.tel ul {
+    list-style-type: none;
+}
+.item li {
+    margin-bottom: 9px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: #FAF9F9;
+    font-weight: 700;
+    line-height: 24px;
+}
+.item a {
+    color: #DEDEDE;
+    text-decoration: none;
+    font-weight: 400;
+}
+.item span {
+    color: #DEDEDE;
+    display: block;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+.tel ul {
+    font-size: 20px;
+    color: #FBB731;
+}
+.tel li {
+    margin-bottom: 12px;
 }
